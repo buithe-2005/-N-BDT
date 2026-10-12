@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Design tokens – STRIDEX
+   Breakpoints (dùng trong @media, CSS chưa hỗ trợ var() ở media query):
+     --bp-sm: 600px | --bp-md: 900px | --bp-lg: 1200px
+   ========================================================================== */
+:root {
+  /* Màu: đen – trắng – xám; màu nhấn dùng tiết chế */
+  --color-black: #111111;
+  --color-white: #ffffff;
+  --color-gray-50: #f5f5f5;
+  --color-gray-100: #ededed;
+  --color-gray-200: #e0e0e0;
+  --color-gray-300: #c8c8c8;
+  --color-gray-500: #6b6b6b;
+  --color-gray-700: #3a3a3a;
+  --color-sale: #c8321a;       /* chỉ dùng cho giá khuyến mãi / lỗi */
+  --color-success: #1d7a46;
+  --color-warning: #8a5a00;
+  --color-focus: #1a56db;
+
+  --color-bg: var(--color-white);
+  --color-surface: var(--color-gray-50);
+  --color-text: var(--color-black);
+  --color-text-muted: var(--color-gray-500);
+  --color-border: var(--color-gray-200);
+
+  /* Typography */
+  --font-sans: "Helvetica Neue", Helvetica, Arial, "Segoe UI", Roboto, system-ui, sans-serif;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2rem;
+  --fs-display: clamp(2.5rem, 7vw, 5.5rem);
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 800;
+  --lh-tight: 1.05;
+  --lh-snug: 1.25;
+  --lh-body: 1.55;
+
+  /* Khoảng cách */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+
+  /* Viền, góc, bóng */
+  --border: 1px solid var(--color-border);
+  --radius-sm: 2px;
+  --radius: 4px;
+  --shadow-pop: 0 6px 24px rgba(0, 0, 0, 0.12);
+
+  /* Layout */
+  --content-max: 1440px;
+  --gutter: clamp(1rem, 3vw, 3rem);
+  --header-h: 64px;
+  --announce-h: 36px;
+
+  /* Chuyển động */
+  --ease: cubic-bezier(0.2, 0.6, 0.2, 1);
+  --t-fast: 120ms;
+  --t-base: 220ms;
+
+  /* Lớp z */
+  --z-header: 50;
+  --z-drawer: 80;
+  --z-modal: 90;
+  --z-ai: 70;
+  --z-toast: 100;
+}
